@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Start Nav bar */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background: #2c0f5f;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: xx-large;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 400px;
+  }
+  
+  nav a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #b8b2b2;
+  }
+  /* End Nav bar */
+  
+  /* Start of About me section */
+  .neonBackground {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(../images/neon.jpg); */
+    height: 100vh;
+    border: 5px solid #000000;
+  }
+  
+  .textbox {
+    background-color: #ffffff;
+    height: 25vh;
+    width: 80vh;
+    box-shadow: 15px 15px 15px black;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    width: 100%;
+    height: 4vh;
+  }
+  
+  .textbox p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vh;
+  }
+  
+  .picOfMe {
+    height: 60vh;
+    margin-right: 150px;
+    box-shadow: 15px 15px 15px black;
+    border-radius: 8px;
+  }
+  /* End of About me section */
+  
+  /* Start of My Work section */
+  .work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 290vh;
+  }
+  
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    width: 100%;
+    height: 10vh;
+    padding: 10px;
+  }
+  .project1 {
+    border-radius: 8px;
+  }
+  
+  .picOfsnakegame {
+    height: 60vh;
+    width: 60vh;
+    box-shadow: 0px 0px 20px -8px black;
+    border-radius: 8px;
+  }
+  
+  .picOfsnakegame:hover {
+    transform: scale(1.1);
+  }
+  
+  .project2 {
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .picOfHoriseon {
+    height: 60vh;
+    width: 60vh;
+    box-shadow: 0px 0px 20px -8px black;
+    border-radius: 8px;
+  }
+  
+  .picOfHoriseon:hover {
+    transform: scale(1.1);
+  }
+  
+  .project3 {
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .picOfOrion {
+    height: 60vh;
+    width: 60vh;
+    box-shadow: 0px 0px 20px -8px black;
+    border-radius: 8px;
+  }
+  
+  .picOfOrion:hover {
+    transform: scale(1.1);
+  }
+  
+  .project4 {
+    border-radius: 8px;
+    margin-top: 30px;
+  }
+  
+  .picOfTicketScholars {
+    height: 60vh;
+    width: 60vh;
+    box-shadow: 0px 0px 20px -8px black;
+    border-radius: 8px;
+  }
+  
+  .picOfTicketScholars:hover {
+    transform: scale(1.1);
+  }
+  
+  /* End of My Work section */
+  
+  /*Start footer section */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background: #2c0f5f;
+    color: #fff;
+    width: 100%;
+    height: 15vh;
+    bottom: 0;
+  }
+  
+  footer h2 {
+    width: 20%;
+  }
+  
+  footer ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  footer a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  footer ul li {
+    margin-left: 20px;
+  }
+  /* End footer section */
+  
+  @media screen and (max-width: 1024px) {
+    .neonBackground {
+      flex-direction: column;
+    }
+    .picOfMe {
+      margin: auto;
+    }
+  
+    .textbox {
+      margin-top: 30px;
+      width: 60vw;
+    }
+  
+    .textbox p {
+      font-size: 1.6vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 3.5vw;
+    }
+  
+    header nav ul {
+      justify-content: space-around;
+    }
+  
+    header nav ul li {
+      font-size: 2vw;
+    }
+    .picOfMe {
+      height: 50vw;
+      width: 40vw;
+    }
+  
+    .work h3 {
+      font-size: 5vw;
+    }
+    .picOfsnakegame {
+      height: 60vw;
+      width: 60vw;
+    }
+    .picOfHoriseon {
+      height: 60vw;
+      width: 60vw;
+    }
+    .picOfOrion {
+      height: 60vw;
+      width: 60vw;
+    }
+    .picOfTicketScholars {
+      height: 60vw;
+      width: 60vw;
+    }
+    footer {
+      justify-content: center;
+    }
+  
+    footer ul {
+      margin: 0px 3vw;
+    }
+  
+    footer ul li {
+      font-size: 2vw;
+    }
+  
+    .contactMe {
+      font-size: 3.5vw;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    header nav ul {
+      justify-content: center;
+    }
+  
+    header nav ul li {
+      margin: 0px 3vw;
+    }
+    .work {
+      height: 100vh;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    header {
+      flex-direction: column;
+    }
+  
+    header h1 {
+      margin-bottom: 2vw;
+    }
+  }
+  
